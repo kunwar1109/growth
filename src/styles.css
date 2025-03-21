@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bcDarkBlue: #002B5C;
+  --color-bcPrimaryBlue: #2988CC
+}
+
+html,
+body,
+:root,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+:root {
+  --bc-separator-margin: 0
+}
+
+.mantine-Breadcrumbs-separator,
+.mantine-Breadcrumbs-breadcrumb {
+  color: #2988CC !important;
+}

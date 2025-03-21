@@ -7,6 +7,9 @@ import { routeTree } from './routeTree.gen'
 
 import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
+import { MantineProvider } from '@mantine/core'
+import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 
 // Create a new router instance
 const router = createRouter({
@@ -31,7 +34,9 @@ if (rootElement && !rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement)
   root.render(
     <StrictMode>
-      <RouterProvider router={router} />
+      <MantineProvider>
+        <RouterProvider router={router} />
+      </MantineProvider>
     </StrictMode>,
   )
 }
