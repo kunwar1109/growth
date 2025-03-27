@@ -9,7 +9,6 @@ import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
 import { MantineProvider } from '@mantine/core'
 import '@mantine/core/styles.css';
-import '@mantine/carousel/styles.css';
 
 // Create a new router instance
 const router = createRouter({
