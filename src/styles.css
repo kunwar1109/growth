@@ -21,3 +21,28 @@ body,
 .mantine-Breadcrumbs-breadcrumb {
   color: #2988CC !important;
 }
+
+.mantine-Modal-content {
+  display: flex !important;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.mantine-Modal-header {
+  min-height: auto !important;
+  align-self: flex-end;
+}
+
+.mantine-Modal-header,
+.mantine-Modal-body {
+  padding: 0 !important;
+}
+
+.mantine-Modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
