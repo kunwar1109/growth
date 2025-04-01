@@ -46,3 +46,9 @@ body,
   gap: 16px;
   align-items: flex-start;
 }
+
+.mantine-Stepper-stepIcon:where([data-progress]),
+.mantine-Stepper-stepIcon:where([data-completed]),
+.mantine-Stepper-separator:where([data-active]) {
+  background: #2988CC !important;
+}

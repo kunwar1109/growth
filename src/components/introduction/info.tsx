@@ -8,7 +8,7 @@ export const Information = () => {
       How do you do it?
     </Text>
     <Divider color="#D9D9D9" pt="1px" pb="1px" className="flex flex-col justify-center items-center self-stretch" />
-    <Text c="bcDarkBlue.0" fs="16px" fw={500} className="leding-normal tracking-[-0.8px]">
+    <Text c="bcDarkBlue.0" fs="16px" fw={500} className="!leading-normal tracking-[-0.8px]">
       Bettercoach Leadership Assessment is straightforward: it has 46 statements that will help you better understand your leadership, and it will take you about 15 minutes from beginning to end. Read each statement and choose how often it applies to you.
       <br />
       They are confidential and for you only.

@@ -13,7 +13,7 @@
 import { Route as rootRoute } from './routes/__root'
 import { Route as AsessmentsRouteImport } from './routes/_asessments/route'
 import { Route as IndexImport } from './routes/index'
-import { Route as AsessmentsResillianceImport } from './routes/_asessments/resilliance'
+import { Route as AsessmentsResilienceImport } from './routes/_asessments/resilience'
 import { Route as AsessmentsPurposeImport } from './routes/_asessments/purpose'
 import { Route as AsessmentsInterdependenceImport } from './routes/_asessments/interdependence'
 import { Route as AsessmentsEmotionalIntelligenceImport } from './routes/_asessments/emotional-intelligence'
@@ -32,9 +32,9 @@ const IndexRoute = IndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const AsessmentsResillianceRoute = AsessmentsResillianceImport.update({
-  id: '/resilliance',
-  path: '/resilliance',
+const AsessmentsResilienceRoute = AsessmentsResilienceImport.update({
+  id: '/resilience',
+  path: '/resilience',
   getParentRoute: () => AsessmentsRouteRoute,
 } as any)
 
@@ -109,11 +109,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AsessmentsPurposeImport
       parentRoute: typeof AsessmentsRouteImport
     }
-    '/_asessments/resilliance': {
-      id: '/_asessments/resilliance'
-      path: '/resilliance'
-      fullPath: '/resilliance'
-      preLoaderRoute: typeof AsessmentsResillianceImport
+    '/_asessments/resilience': {
+      id: '/_asessments/resilience'
+      path: '/resilience'
+      fullPath: '/resilience'
+      preLoaderRoute: typeof AsessmentsResilienceImport
       parentRoute: typeof AsessmentsRouteImport
     }
   }
@@ -126,7 +126,7 @@ interface AsessmentsRouteRouteChildren {
   AsessmentsEmotionalIntelligenceRoute: typeof AsessmentsEmotionalIntelligenceRoute
   AsessmentsInterdependenceRoute: typeof AsessmentsInterdependenceRoute
   AsessmentsPurposeRoute: typeof AsessmentsPurposeRoute
-  AsessmentsResillianceRoute: typeof AsessmentsResillianceRoute
+  AsessmentsResilienceRoute: typeof AsessmentsResilienceRoute
 }
 
 const AsessmentsRouteRouteChildren: AsessmentsRouteRouteChildren = {
@@ -134,7 +134,7 @@ const AsessmentsRouteRouteChildren: AsessmentsRouteRouteChildren = {
   AsessmentsEmotionalIntelligenceRoute: AsessmentsEmotionalIntelligenceRoute,
   AsessmentsInterdependenceRoute: AsessmentsInterdependenceRoute,
   AsessmentsPurposeRoute: AsessmentsPurposeRoute,
-  AsessmentsResillianceRoute: AsessmentsResillianceRoute,
+  AsessmentsResilienceRoute: AsessmentsResilienceRoute,
 }
 
 const AsessmentsRouteRouteWithChildren = AsessmentsRouteRoute._addFileChildren(
@@ -148,7 +148,7 @@ export interface FileRoutesByFullPath {
   '/emotional-intelligence': typeof AsessmentsEmotionalIntelligenceRoute
   '/interdependence': typeof AsessmentsInterdependenceRoute
   '/purpose': typeof AsessmentsPurposeRoute
-  '/resilliance': typeof AsessmentsResillianceRoute
+  '/resilience': typeof AsessmentsResilienceRoute
 }
 
 export interface FileRoutesByTo {
@@ -158,7 +158,7 @@ export interface FileRoutesByTo {
   '/emotional-intelligence': typeof AsessmentsEmotionalIntelligenceRoute
   '/interdependence': typeof AsessmentsInterdependenceRoute
   '/purpose': typeof AsessmentsPurposeRoute
-  '/resilliance': typeof AsessmentsResillianceRoute
+  '/resilience': typeof AsessmentsResilienceRoute
 }
 
 export interface FileRoutesById {
@@ -169,7 +169,7 @@ export interface FileRoutesById {
   '/_asessments/emotional-intelligence': typeof AsessmentsEmotionalIntelligenceRoute
   '/_asessments/interdependence': typeof AsessmentsInterdependenceRoute
   '/_asessments/purpose': typeof AsessmentsPurposeRoute
-  '/_asessments/resilliance': typeof AsessmentsResillianceRoute
+  '/_asessments/resilience': typeof AsessmentsResilienceRoute
 }
 
 export interface FileRouteTypes {
@@ -181,7 +181,7 @@ export interface FileRouteTypes {
     | '/emotional-intelligence'
     | '/interdependence'
     | '/purpose'
-    | '/resilliance'
+    | '/resilience'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -190,7 +190,7 @@ export interface FileRouteTypes {
     | '/emotional-intelligence'
     | '/interdependence'
     | '/purpose'
-    | '/resilliance'
+    | '/resilience'
   id:
     | '__root__'
     | '/'
@@ -199,7 +199,7 @@ export interface FileRouteTypes {
     | '/_asessments/emotional-intelligence'
     | '/_asessments/interdependence'
     | '/_asessments/purpose'
-    | '/_asessments/resilliance'
+    | '/_asessments/resilience'
   fileRoutesById: FileRoutesById
 }
 
@@ -237,7 +237,7 @@ export const routeTree = rootRoute
         "/_asessments/emotional-intelligence",
         "/_asessments/interdependence",
         "/_asessments/purpose",
-        "/_asessments/resilliance"
+        "/_asessments/resilience"
       ]
     },
     "/_asessments/change": {
@@ -256,8 +256,8 @@ export const routeTree = rootRoute
       "filePath": "_asessments/purpose.tsx",
       "parent": "/_asessments"
     },
-    "/_asessments/resilliance": {
-      "filePath": "_asessments/resilliance.tsx",
+    "/_asessments/resilience": {
+      "filePath": "_asessments/resilience.tsx",
       "parent": "/_asessments"
     }
   }

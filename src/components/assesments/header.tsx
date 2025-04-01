@@ -1,7 +1,7 @@
 import { Divider } from "@mantine/core"
 
 export const Header = () => {
-  return <header className='flex flex-col items-start gap-6'>
+  return <header className='w-full flex flex-col items-start gap-6'>
     <div className='w-[195px] h-[40px] flex justify-center items-center'>
       <img src="/bc-logo.svg" alt="bc-logo" />
     </div>
